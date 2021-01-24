@@ -1,0 +1,92 @@
+body{
+  background-color:rgb(48, 59, 80) ;
+}
+
+h1{
+  color: rgb(48, 59, 80);
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.App{
+  background-color: rgb(101, 149, 190);
+  min-height: 300px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+.App h1{
+  text-align: center  ;
+}
+
+#todo-form input{
+  background-color: rgb(48, 59, 80);
+  border: 0;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+}
+
+#todo-form input::placeholder{
+  color: rgb(101, 149, 190);
+}
+#todo-form button{
+  height: 40px;
+  width: 100px;
+  border: 0;
+  border-radius: 10px;
+  background-color: crimson;
+  cursor: pointer;
+  font-weight: bolder;
+  color: rgb(48, 59, 80);
+}
+ol{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  padding: 0;
+  margin:0;
+}
+
+.item{
+  color: whitesmoke;
+  background-color: rgb(48, 59, 80);
+  width: 350px;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.item li{
+  padding:10px;
+  position: relative;
+  left: 30px;
+  font-size: 20px;
+}
+
+
+.item li span{
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  top: 10px;
+}
+
+.checkicon{
+  font-size: 30px;
+  color: green;
+}
+
+.Filter-Count{
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.counter{
+  color: rgb(48, 59, 80);
+  padding-top: 20px;
+}
