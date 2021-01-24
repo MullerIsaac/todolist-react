@@ -10,6 +10,9 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(()=>{
+    function handleFilter(){
+    setFilteredTodos(todos.filter(todo=>todo.task.toLowerCase().includes(search.toLowerCase())))
+  }
     handleFilter();
   }, [todos, search]);
 
@@ -26,10 +29,6 @@ function App() {
         return todo;
       })
     );
-  }
-
-  function handleFilter(){
-    setFilteredTodos(todos.filter(todo=>todo.task.toLowerCase().includes(search.toLowerCase())))
   }
 
   return (
